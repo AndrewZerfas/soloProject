@@ -1,0 +1,88 @@
+*{background-image: 'url(https://w7.pngwing.com/pngs/998/609/png-transparent-numbers-illustration-technology-binary-file-euclidean-computer-file-binary-background-blue-other-angle.png)' }
+
+.menu {
+  margin-left: 25px;
+  padding: 10px;
+  border-radius: 20px;
+  height: 175px ; 
+  width: 225px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+  margin-bottom: 25px;
+}
+.allFigs {
+  display: inline-block;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+  width: 400px;
+  margin:75px;
+  padding:25px;
+}
+
+.form{
+  margin-left: 25px;
+  border-radius: 20px;
+  height: 250px ; 
+  width: 250px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+}
+
+.details{
+  margin-left: 50px;
+  padding: 30px;
+  width: 900px;
+  border-radius: 25px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+}
+
+.link{
+  color:blue;
+}
+
+.button{
+  color: white;
+  background-color: blue;
+  border-radius: 25px;
+}
+
+.loginWord{
+  color: blue;
+  margin-left: 25px;
+  border-radius: 20px;
+  height: 45px ; 
+  width: 85px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+}
+.login{
+  margin-left: 25px;
+  border-radius: 20px;
+  height: 120px ; 
+  width: 200px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+}
+
+.registerWord{
+  color: blue;
+  margin-left: 25px;
+  border-radius: 20px;
+  height: 45px ; 
+  width: 125px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+}
+
+.register{
+  margin-left: 25px;
+  border-radius: 20px;
+  height: 210px ; 
+  width: 200px;
+  padding: 15px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+}
+
+.error{
+  color: blue;
+  margin-left: 25px;
+}
