@@ -82,9 +82,9 @@ return(
                     <option value = "N/A">N/A</option>
                     </select>
                                 {
-            errors.season?
+            errors.season? (
             <span>{errors.season.message}</span>
-            :null
+             ) :null
             }
             </div>
             <div>
