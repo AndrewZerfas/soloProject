@@ -38,7 +38,7 @@ const NewFigure = () => {
           })
           .catch((err) => {
               console.log(err);
-              navigate("/");
+              navigate("/new");
               console.log("err.response:", err.response);
               console.log("err.response.data:", err.response.data);
               console.log("err.response.data.errors:", err.response.data.errors);

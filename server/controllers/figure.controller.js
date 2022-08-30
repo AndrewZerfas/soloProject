@@ -23,15 +23,13 @@ module.exports = {
 
         const newFigureObject = new Figure(req.body);
 
-        //const decodedJWT = jwt.decode(req.cookies.usertoken,{
-         //  complete: true
-         //})
+        const decodedJWT = jwt.decode(req.cookies.usertoken,{
+          complete: true
+         })
 
        newFigureObject.createdBy = decodedJWT.payload.id
-       
-       newFigureObjects.createdBy = req.jwtpayload.id;
 
-        
+       newFigureObject.createdBy = req.jwtpayload.id;
 
         newFigureObject.save()
             .then((newFigure)=>{

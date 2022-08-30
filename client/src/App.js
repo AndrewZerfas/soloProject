@@ -3,7 +3,7 @@ import AllFigures from './components/AllFigures';
 import NewFigure from './components/NewFigure';
 import OneFigure from './components/OneFigure';
 import UpdateFigure from "./components/UpdateFigure";
-import OneCategory from "./components/OneCategory";
+
 import LogReg from "./views/LogReg"
 
 
@@ -18,11 +18,12 @@ function App() {
         <Route path="/figures/edit/:id" element={<UpdateFigure/>}/>
         <Route path="/" element={<AllFigures/>}/>
         <Route path="/new" element={<NewFigure/>}/>
-        <Route path="/:category" element={<OneCategory/>}/>
+
         </Routes>
     </div>
     </BrowserRouter>
   );
 }
 
-export default App;
+export default App; 
+//       <Route path="category/:category" element={<OneCategory/>}/>

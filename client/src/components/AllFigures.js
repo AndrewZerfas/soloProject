@@ -7,6 +7,7 @@ const AllFigures = () => {
 
     const [allFigures, setAllFigures] = useState([]);
 
+
     useEffect(()=>{
         axios.get("http://localhost:8000/api/figures")
         .then((res)=>{
