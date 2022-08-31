@@ -3,7 +3,7 @@ import AllFigures from './components/AllFigures';
 import NewFigure from './components/NewFigure';
 import OneFigure from './components/OneFigure';
 import UpdateFigure from "./components/UpdateFigure";
-
+import Category from './components/Category';
 import LogReg from "./views/LogReg"
 
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/figures/edit/:id" element={<UpdateFigure/>}/>
         <Route path="/" element={<AllFigures/>}/>
         <Route path="/new" element={<NewFigure/>}/>
-
+        <Route path="/category" element={<Category/>}/>
         </Routes>
     </div>
     </BrowserRouter>
@@ -26,4 +26,4 @@ function App() {
 }
 
 export default App; 
-//       <Route path="category/:category" element={<OneCategory/>}/>
+//       

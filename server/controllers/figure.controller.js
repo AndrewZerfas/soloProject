@@ -5,8 +5,6 @@ const User = require('../models/user.model');
 
 module.exports = {
 
-
-
     getAllFigures: (req, res) => {
         Figure.find()
         .then((allFigures)=>{
@@ -41,19 +39,6 @@ module.exports = {
                 res.status(400).json(err);
             })
     },
-    //no login
-    //createFigure: (req, res)=>{//
-  //      Figure.create(newFigure)
-  //          .then((newFigure)=>{
-  //              console.log(newFigure);
-  //              res.json(newFigure)
-  //          })
-  //          .catch((err) =>{
-  //               console.log("something went wrong with createFigure");
- //               res.status(400).json(err);
-  //          })
- //   },
-
 
 
     getOneFigure: (req, res) => {

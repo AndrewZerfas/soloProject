@@ -4,9 +4,7 @@ import {Link, Navigate} from 'react-router-dom';
 import './App.css';
 
 const AllFigures = () => {
-
     const [allFigures, setAllFigures] = useState([]);
-
 
     useEffect(()=>{
         axios.get("http://localhost:8000/api/figures")
@@ -63,4 +61,4 @@ const AllFigures = () => {
     )
 }
 
-        export default AllFigures;
+export default AllFigures;
