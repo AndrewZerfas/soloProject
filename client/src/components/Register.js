@@ -68,6 +68,7 @@ const Register = (props) =>{
                     value={user.username}
                     onChange={(e)=> handleChange(e)}
                     />
+                    
             </div>
             <div>
                 <label>Email: </label>
@@ -110,6 +111,7 @@ const Register = (props) =>{
                     value={user.confirmPassword}
                     onChange= {handleChange}
                     />
+
             </div>
             <div>
                 <button class="button" type="submit">Register!</button>

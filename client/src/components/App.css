@@ -1,3 +1,23 @@
+.background {
+  background-image: url("binary.png");
+}
+.sidebar {
+  height: 30%;
+  width: 180px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  padding-top: 20px;
+  background-image: linear-gradient(to bottom right, white, lightblue);
+  }
+  
+  .sidebar div {
+  padding: 10px;
+  margin-left: 8px;
+  font-size: 24px;
+  display: block;
+  }
 
 .menu {
   margin-left: 25px;
@@ -7,20 +27,23 @@
   width: 225px;
   background-image: linear-gradient(to bottom right, white, lightblue);
   margin-bottom: 25px;
+  margin-left: 250px;
 }
+
 .allFigs {
   display: inline-block;
   border-radius: 30px;
   background-image: linear-gradient(to bottom right, white, lightblue);
   width: 400px;
   margin:75px;
+  margin-left: 250px;
   padding:25px;
 }
 
 .form{
   margin-left: 25px;
   border-radius: 20px;
-  height: 250px ; 
+  height: auto; 
   width: 250px;
   padding: 15px;
   background-image: linear-gradient(to bottom right, white, lightblue);
@@ -37,11 +60,20 @@
 .link{
   color:blue;
 }
+.link:hover {
+  color: lightblue
+}
+
 
 .button{
   color: white;
   background-color: blue;
   border-radius: 25px;
+}
+
+.button:hover {
+  background-color: lightblue;
+  color: black;
 }
 
 .loginWord{
@@ -56,7 +88,7 @@
 .login{
   margin-left: 25px;
   border-radius: 20px;
-  height: 120px ; 
+  height: auto ; 
   width: 200px;
   padding: 15px;
   background-image: linear-gradient(to bottom right, white, lightblue);
@@ -82,6 +114,7 @@
 }
 
 .error{
-  color: blue;
+  color: red;
   margin-left: 25px;
+  
 }

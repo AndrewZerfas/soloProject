@@ -47,10 +47,6 @@ const FigureSchema = new mongoose.Schema({
         ref: "User"
     }
 
-
-
-
-
 }, {timestamps:true})
 
 const Figure = mongoose.model("Figure", FigureSchema);

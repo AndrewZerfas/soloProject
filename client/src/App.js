@@ -5,6 +5,7 @@ import OneFigure from './components/OneFigure';
 import UpdateFigure from "./components/UpdateFigure";
 
 import LogReg from "./views/LogReg"
+import Digivolving from './components/Digivolving';
 
 
 function App() {
@@ -18,12 +19,21 @@ function App() {
         <Route path="/figures/edit/:id" element={<UpdateFigure/>}/>
         <Route path="/" element={<AllFigures/>}/>
         <Route path="/new" element={<NewFigure/>}/>
+<<<<<<< Updated upstream
 
+=======
+        <Route path="/c/:category" element={<Category/>}/>
+>>>>>>> Stashed changes
         </Routes>
     </div>
     </BrowserRouter>
   );
 }
 
+<<<<<<< Updated upstream
 export default App; 
 //       <Route path="category/:category" element={<OneCategory/>}/>
+=======
+export default App;                
+//<Route path="/category" element={<Category/>}/>
+>>>>>>> Stashed changes

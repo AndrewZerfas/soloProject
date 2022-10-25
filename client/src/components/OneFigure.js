@@ -47,7 +47,7 @@ const OneFigure = () => {
 
 
     return (
-        <div style = {{backgroundImage: 'url(https://w7.pngwing.com/pngs/998/609/png-transparent-numbers-illustration-technology-binary-file-euclidean-computer-file-binary-background-blue-other-angle.png)', height:"1000px"}}>
+        <div class = "background" style = {{height:"1000px"}}>
         <header class = "menu" ><h1>Details</h1>
                  <Link to={"/"} class="link">Home<br/></Link>
                  <Link to={"/login"} class="link">Login / Register</Link>

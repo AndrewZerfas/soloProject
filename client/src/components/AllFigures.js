@@ -28,7 +28,6 @@ const AllFigures = () => {
 .then((res) => {
     console.log(res);
     console.log(res.data);
-  
 })
 .catch((err)=>{
     console.log(err);
@@ -41,13 +40,19 @@ const AllFigures = () => {
 
 
     return (
-<div style ={{backgroundImage: 'url(https://w7.pngwing.com/pngs/998/609/png-transparent-numbers-illustration-technology-binary-file-euclidean-computer-file-binary-background-blue-other-angle.png)' }}>
+<div class = "background">
     <header class = "menu" ><h1>Figure List</h1>
     <Link to={"/new"} class="link">New<br/></Link>
     <Link to={"/login"} class="link">Login / Register<br/></Link>
     <button onClick={logout} class="button">Logout</button>
     </header>
-
+    <div class="sidebar">
+    <div>Movies</div>
+    <div>Video Games</div>
+    <div>TCG</div>
+    <div>Classic TCG</div>
+    <div>Miscellaneous</div>
+    </div>
         {
             allFigures.map((figure, index)=>(
                 <div class = "allFigs"  key={figure._id}>
@@ -57,7 +62,6 @@ const AllFigures = () => {
                 </div>
             ))
             }
-            
 </div>
 
     )

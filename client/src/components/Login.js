@@ -38,7 +38,7 @@ const Login = (props) =>{
     <div>
 
         <h1 class="loginWord">Login</h1>
-        <h3 class="error"> {errorMessage ? errorMessage: ""}</h3>
+        <h2 class="error"> {errorMessage ? errorMessage: ""}</h2>
         <form class= "login" onSubmit={login}>
             <div>
                 <label>Email: </label>              

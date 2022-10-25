@@ -43,6 +43,7 @@ const NewFigure = () => {
               console.log("err.response.data:", err.response.data);
               console.log("err.response.data.errors:", err.response.data.errors);
               setError(err.response.data.errors)
+              navigate("/new");
           })
 
     }
@@ -50,7 +51,7 @@ const NewFigure = () => {
 
 return(
        
-    <div style ={{height: "1000px", backgroundImage: 'url(https://w7.pngwing.com/pngs/998/609/png-transparent-numbers-illustration-technology-binary-file-euclidean-computer-file-binary-background-blue-other-angle.png)' }} >
+    <div class = "background" style ={{height: "1000px"}} >
          <header class = "menu"><h1>Add Figure</h1>
          <Link to={"/"} class="link">Home<br/></Link>
          <Link to={"/login"} class="link">Login / Register</Link>

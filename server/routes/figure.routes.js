@@ -7,9 +7,8 @@ module.exports = (app) =>{
     app.get('/api/figures/:id', FigureController.getOneFigure);//works
     app.put("/api/figures/:id", authenticate, FigureController.updateFigure);//works
     app.delete('/api/figures/:id', authenticate, FigureController.deleteFigure);//works
-   // app.get("/api/figures/:username", authenticate, FigureController.findAllFiguresByUser);
+    //app.get("/api/category/digivolving", FigureController.getDigivolving);
+    // app.get("/api/figures/:username", authenticate, FigureController.findAllFiguresByUser);
     //new  might need :category
-    //app.get('/api/figures/categories', FigureController.getAllFigures);
-
-
+    app.get('/api/figures/c/:category', FigureController.getCategory);
 };

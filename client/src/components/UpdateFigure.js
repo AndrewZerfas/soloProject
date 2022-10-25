@@ -28,7 +28,6 @@ const UpdateFigure = () => {
 
     console.log(id);
 
-
     useEffect(() => {
         axios.get(`http://localhost:8000/api/figures/${id}`)
           .then((res) => {
@@ -46,7 +45,6 @@ const UpdateFigure = () => {
           .catch((err)=>{console.log(err)
           });
       }, []);
-
 
     const updateHandler = (e) => {
         e.preventDefault();
@@ -83,8 +81,7 @@ const UpdateFigure = () => {
      }
 
 
-return(
-       
+return( 
     <div style ={{height:"900px", backgroundImage: 'url(https://w7.pngwing.com/pngs/998/609/png-transparent-numbers-illustration-technology-binary-file-euclidean-computer-file-binary-background-blue-other-angle.png)' }}>
          
          <header class="menu"><h1>Update Figure</h1>
@@ -203,6 +200,5 @@ return(
     </div>
 )
 }
-
 
 export default UpdateFigure;
