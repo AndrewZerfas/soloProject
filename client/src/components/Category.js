@@ -11,7 +11,7 @@ const Category = () => {
     console.log(category);
 
     useEffect(()=>{
-        axios.get(`http://localhost:8000/api/c/${category}`)
+        axios.get(`http://localhost:8000/api/figures/c/${category}`)
         .then((res)=>{
             console.log(res);
             console.log(res.data);

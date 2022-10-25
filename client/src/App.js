@@ -19,21 +19,11 @@ function App() {
         <Route path="/figures/edit/:id" element={<UpdateFigure/>}/>
         <Route path="/" element={<AllFigures/>}/>
         <Route path="/new" element={<NewFigure/>}/>
-<<<<<<< Updated upstream
-
-=======
-        <Route path="/c/:category" element={<Category/>}/>
->>>>>>> Stashed changes
         </Routes>
     </div>
     </BrowserRouter>
   );
 }
 
-<<<<<<< Updated upstream
 export default App; 
 //       <Route path="category/:category" element={<OneCategory/>}/>
-=======
-export default App;                
-//<Route path="/category" element={<Category/>}/>
->>>>>>> Stashed changes

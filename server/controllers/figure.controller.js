@@ -6,8 +6,6 @@ const Category = require('../models/figure.model');
 
 module.exports = {
 
-
-
     getAllFigures: (req, res) => {
         Figure.find()
         .then((allFigures)=>{
@@ -33,7 +31,7 @@ module.exports = {
     },*/
 
     getCategory: (req, res) => {
-        Figure.findCategory({category: req.params.category})
+        Figure.find({category: req.params.category})
         .then((allCategory)=>{
             console.log(allCategory);
             res.json(allCategory);
