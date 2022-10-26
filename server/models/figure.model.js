@@ -17,7 +17,7 @@ const FigureSchema = new mongoose.Schema({
     category: {
         type: String,
         required: [true, "need category"],
-        enum: ["digivolving", "d-arts/figuarts", "d-real","miniatures", "other"],
+        enum: ["digivolving", "figuarts", "d-real","miniatures", "other"],
     },
 
     region: {

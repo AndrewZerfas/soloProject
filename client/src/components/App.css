@@ -2,7 +2,7 @@
   background-image: url("binary.png");
 }
 .sidebar {
-  height: 30%;
+  height: auto;
   width: 180px;
   position: absolute;
   left: 0;
@@ -63,7 +63,6 @@
 .link:hover {
   color: lightblue
 }
-
 
 .button{
   color: white;

@@ -5,7 +5,7 @@ import OneFigure from './components/OneFigure';
 import UpdateFigure from "./components/UpdateFigure";
 
 import LogReg from "./views/LogReg"
-import Digivolving from './components/Digivolving';
+import Category from './components/Category';
 
 
 function App() {
@@ -19,11 +19,11 @@ function App() {
         <Route path="/figures/edit/:id" element={<UpdateFigure/>}/>
         <Route path="/" element={<AllFigures/>}/>
         <Route path="/new" element={<NewFigure/>}/>
+        <Route path="/category/:category" element={<Category/>}/>
         </Routes>
     </div>
     </BrowserRouter>
   );
 }
 
-export default App; 
-//       <Route path="category/:category" element={<OneCategory/>}/>
+export default App;    

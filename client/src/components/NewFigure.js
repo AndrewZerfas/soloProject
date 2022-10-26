@@ -25,7 +25,6 @@ const NewFigure = () => {
 
     const [errors, setError] = useState({})
 
-
     const submitHandler = (e) => {
         e.preventDefault();
         axios.post("http://localhost:8000/api/figures", {name, season, category, region, rating, image1, image2, image3},
@@ -50,7 +49,6 @@ const NewFigure = () => {
 
 
 return(
-       
     <div class = "background" style ={{height: "1000px"}} >
          <header class = "menu"><h1>Add Figure</h1>
          <Link to={"/"} class="link">Home<br/></Link>
@@ -85,7 +83,7 @@ return(
                                 {
             errors.season? (
             <span>{errors.season.message}</span>
-             ) :null
+            ) :null
             }
             </div>
             <div>
@@ -93,7 +91,7 @@ return(
                 <select value ={category} name="category" onChange={(e) => setCategory(e.target.value)} >
                 <option defaultValue hidden>Select a Category</option>
                     <option value = "digivolving">digivolving</option>
-                    <option value = "d-arts/figuarts">d-arts / figuarts</option>
+                    <option value = "figuarts">figuarts</option>
                     <option value = "d-real">d-real</option>
                     <option value = "miniatures">miniatures</option>
                     <option value = "other">other</option>

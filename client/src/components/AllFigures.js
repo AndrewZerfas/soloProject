@@ -42,16 +42,18 @@ const AllFigures = () => {
     return (
 <div class = "background">
     <header class = "menu" ><h1>Figure List</h1>
+    <Link to={"/"} class="link">Home<br/></Link>
     <Link to={"/new"} class="link">New<br/></Link>
     <Link to={"/login"} class="link">Login / Register<br/></Link>
     <button onClick={logout} class="button">Logout</button>
     </header>
     <div class="sidebar">
-    <div>Movies</div>
-    <div>Video Games</div>
-    <div>TCG</div>
-    <div>Classic TCG</div>
-    <div>Miscellaneous</div>
+    <div><h4>Categories</h4></div>
+    <div><Link to={'category/digivolving'} class="link">Digivolving</Link></div>
+    <div><Link to={'category/figuarts'} class="link">Figuarts</Link></div>
+    <div><Link to={'category/d-real'} class="link">D-Real</Link></div>
+    <div><Link to={'category/miniatures'} class="link">Miniatures</Link></div>
+    <div><Link to={'category/other'} class="link">Other</Link></div>
     </div>
         {
             allFigures.map((figure, index)=>(
