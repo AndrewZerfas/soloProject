@@ -49,11 +49,11 @@ const AllFigures = () => {
     </header>
     <div class="sidebar">
     <div><h4>Categories</h4></div>
-    <div><Link to={'category/digivolving'} class="link">Digivolving</Link></div>
-    <div><Link to={'category/figuarts'} class="link">Figuarts</Link></div>
-    <div><Link to={'category/d-real'} class="link">D-Real</Link></div>
-    <div><Link to={'category/miniatures'} class="link">Miniatures</Link></div>
-    <div><Link to={'category/other'} class="link">Other</Link></div>
+    <div><Link to={'/category/digivolving'} class="link">Digivolving</Link></div>
+    <div><Link to={'/category/figuarts'} class="link">Figuarts</Link></div>
+    <div><Link to={'/category/d-real'} class="link">D-Real</Link></div>
+    <div><Link to={'/category/miniatures'} class="link">Miniatures</Link></div>
+    <div><Link to={'/category/other'} class="link">Other</Link></div>
     </div>
         {
             allFigures.map((figure, index)=>(

@@ -11,7 +11,7 @@ const Category = () => {
     console.log(category);
 
     useEffect(()=>{
-        axios.get(`http://localhost:8000/api/figures/c/${category}`)
+        axios.get(`http://localhost:8000/api/figures/category/${category}`)
         .then((res)=>{
             console.log(res);
             console.log(res.data);
@@ -66,26 +66,3 @@ const Category = () => {
     )
 }
 export default Category;
-/*            <div class= "allCats" key={figure.category}>
-            <select
-        name="category-list"
-        id="category-list"
-        onChange={handleCategoryChange}
->
-        <option value="figure.category">{figure.category}</option>
-        </select>
-        </div>       
-            <div>
-                <select
-                name="category-list"
-                id="category-list"
-                onchange={handleCategoryChange}
-                >
-            <option value="">All</option>
-            <option value='${figure.digivolving}'>digivolving</option>
-            <option value="figure.d-arts/figuarts">d-arts/figuarts</option>
-            <option value="d-real">d-real</option>
-            <option value="miniatures">miniatures</option>
-            <option value="other">other</option>
-                </select>                
-            </div>*/   

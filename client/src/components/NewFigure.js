@@ -30,30 +30,30 @@ const NewFigure = () => {
         axios.post("http://localhost:8000/api/figures", {name, season, category, region, rating, image1, image2, image3},
         {withCredentials: true}
         )    
-          .then((res)=>{
+        .then((res)=>{
             console.log(res);
-              console.log(res.data);
-              navigate("/");
-          })
-          .catch((err) => {
-              console.log(err);
-              navigate("/new");
-              console.log("err.response:", err.response);
-              console.log("err.response.data:", err.response.data);
-              console.log("err.response.data.errors:", err.response.data.errors);
-              setError(err.response.data.errors)
-              navigate("/new");
-          })
+            console.log(res.data);
+        navigate("/");
+        })
+        .catch((err) => {
+            console.log(err);
+            navigate("/new");
+            console.log("err.response:", err.response);
+            console.log("err.response.data:", err.response.data);
+            console.log("err.response.data.errors:", err.response.data.errors);
+            setError(err.response.data.errors)
+            navigate("/new");
+        })
 
     }
 
 
 return(
     <div class = "background" style ={{height: "1000px"}} >
-         <header class = "menu"><h1>Add Figure</h1>
-         <Link to={"/"} class="link">Home<br/></Link>
-         <Link to={"/login"} class="link">Login / Register</Link>
-         </header>
+        <header class = "menu"><h1>Add Figure</h1>
+        <Link to={"/"} class="link">Home<br/></Link>
+        <Link to={"/login"} class="link">Login / Register</Link>
+        </header>
 
         <form class= "form" onSubmit={submitHandler}>
             <div>        
@@ -136,7 +136,7 @@ return(
                     onChange={(e) => setImage1(e.target.value)}
                     type="text"
                 />
-                                                {
+            {
             errors.image1?
             <span>{errors.image1.message}</span>
             :null

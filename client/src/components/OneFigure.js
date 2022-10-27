@@ -23,22 +23,22 @@ const OneFigure = () => {
     const [image3, setImage3] = useState("");
 
     const navigate = useNavigate();
-  
+
     console.log(id);
-  
+
     useEffect(() => {
-      axios.get(`http://localhost:8000/api/figures/${id}`)
+    axios.get(`http://localhost:8000/api/figures/${id}`)
         .then((res) => {
-          console.log(res);
-          console.log(res.data);
-          setName(res.data.name);
-          setSeason(res.data.season);
-          setCategory(res.data.category);
-          setRegion(res.data.region);
-          setRating(res.data.rating);
-          setImage1(res.data.image1);
-          setImage2(res.data.image2);
-          setImage3(res.data.image3);
+        console.log(res);
+        console.log(res.data);
+        setName(res.data.name);
+        setSeason(res.data.season);
+        setCategory(res.data.category);
+        setRegion(res.data.region);
+        setRating(res.data.rating);
+        setImage1(res.data.image1);
+        setImage2(res.data.image2);
+        setImage3(res.data.image3);
         })
         .catch((err)=>{console.log(err)
         });
@@ -49,10 +49,10 @@ const OneFigure = () => {
     return (
         <div class = "background" style = {{height:"1000px"}}>
         <header class = "menu" ><h1>Details</h1>
-                 <Link to={"/"} class="link">Home<br/></Link>
-                 <Link to={"/login"} class="link">Login / Register</Link>
-                 </header>
-                 <div class = "details">
+                <Link to={"/"} class="link">Home<br/></Link>
+                <Link to={"/login"} class="link">Login / Register</Link>
+                </header>
+                <div class = "details">
                     <div >
                         <img src={image1} style={{border: "solid", width: "250px"}}/>
                         <img src={image2} style={{border: "solid", width: "250px", marginLeft: "25px"}}/>

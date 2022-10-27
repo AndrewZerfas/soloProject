@@ -10,5 +10,5 @@ module.exports = (app) =>{
     //app.get("/api/category/digivolving", FigureController.getDigivolving);
     // app.get("/api/figures/:username", authenticate, FigureController.findAllFiguresByUser);
     //new  might need :category
-    app.get('/api/figures/c/:category', FigureController.getCategory);
+    app.get('/api/figures/category/:category', FigureController.getCategory);
 };
