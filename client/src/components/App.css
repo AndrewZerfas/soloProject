@@ -39,19 +39,23 @@
   }
 
   .menu {
-    margin-left: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
     padding: 10px;
     border-radius: 20px;
     height: 175px ; 
     width: 225px;
     background-image: linear-gradient(to bottom right, white,lightblue );
     margin-bottom: 25px;
-    margin-left: 250px;
+    margin-left: 80%;
     box-shadow: 6px 6px 8px #333333;
   }
 
 .menu-dark {
-  margin-left: 25px;
+  position: absolute;
+  right: 0;
+  top: 0;
   padding: 10px;
   border-radius: 20px;
   height: 175px ; 
@@ -67,7 +71,7 @@
   background-image: linear-gradient(to bottom right, white,lightblue );
   width: 400px;
   margin:75px;
-  margin-left: 250px;
+  margin-left: 11%;
   padding:25px;
   box-shadow: 6px 6px 8px #333333;
 }
@@ -78,7 +82,7 @@
   background-image: linear-gradient(to bottom right, lightblue, rgb(119, 119, 119));
   width: 400px;
   margin:75px;
-  margin-left: 250px;
+  margin-left: 100px;
   padding:25px;
 }
 

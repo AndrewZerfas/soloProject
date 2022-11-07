@@ -25,7 +25,8 @@ module.exports = {
             res.json(allDigivolving);
         })
         .catch((err)=>{
-            console.log("get all digivolving failed")
+            consol
+            e.log("get all digivolving failed")
             res.json({message: "failed to get all digivolving", error: err})
         })
     },*/
