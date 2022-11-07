@@ -1,7 +1,7 @@
 const Figure = require('../models/figure.model');
 const jwt = require("jsonwebtoken");
 const User = require('../models/user.model');
-const Category = require('../models/figure.model');
+//const Category = require('../models/figure.model');
 
 
 module.exports = {

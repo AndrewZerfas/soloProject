@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 
-
 mongoose
 .connect('mongodb://localhost/figuresDB' , {
     useNewUrlParser: true,
@@ -8,4 +7,4 @@ mongoose
     })
     .then(() =>{ console.log('Connected to figuresDB database!')})
 
-    .catch((err)=> {console.log(" can't connect to figuresDB")})
+    .catch((err)=> {console.log("can't connect to figuresDB")})
